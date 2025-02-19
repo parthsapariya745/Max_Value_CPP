@@ -1,8 +1,9 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    int a,b,c,d;
+int main()
+{
+    int a, b, c, d;
 
     cout << "Enter the first value: ";
     cin >> a;
@@ -15,48 +16,62 @@ int main(){
 
     cout << "Enter the fourth value: ";
     cin >> d;
-    
-    if (a > b)
+
+    if (a != b && a != c && a != d && b != c && b != d && c != d)
     {
-        if (a > c)
+        if (a > b)
         {
-            if (a > d)
+            if (a > c)
             {
-                cout << "first value is Max...";
+                if (a > d)
+                {
+                    cout << "first value is Max...";
+                }
+                else
+                {
+                    cout << "fourth value is Max...";
+                }
             }
-            else{
-                cout << "fourth value is Max...";
+            else
+            {
+                if (c > d)
+                {
+                    cout << "third value is Max...";
+                }
+                else
+                {
+                    cout << "fourth value is Max...";
+                }
             }
         }
-        else{
-            if (c > d)
+        else
+        {
+            if (b > c)
             {
-                cout << "third value is Max...";
+                if (b > d)
+                {
+                    cout << "second value is Max...";
+                }
+                else
+                {
+                    cout << "fourth value is Max...";
+                }
             }
-            else{
-                cout << "fourth value is Max...";
+            else
+            {
+                if (c > d)
+                {
+                    cout << "third value is Max...";
+                }
+                else
+                {
+                    cout << "fourth value is Max...";
+                }
             }
         }
     }
-    else{
-        if (b > c)
-        {
-            if (b > d)
-            {
-                cout << "second value is Max...";
-            }
-            else{
-                cout << "fourth value is Max...";
-            }
-        }
-        else{
-            if (c > d)
-            {
-                cout << "third value is Max...";
-            }
-            else{
-                cout << "fourth value is Max...";
-            }
-        }
+    else
+    {
+        cout << "this value are same";
     }
 }

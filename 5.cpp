@@ -22,7 +22,7 @@ int main(){
     cout << "Enter the sixth value: ";
     cin >> f;
 
-    if (a != b && b != c && c != d && d != e && e != f)
+    if (a != b && a != c && a != d && a != e && a != f && b != c && b != d && b != e && b != f && c != d && c != e && c != f && d != e && d != f && e != f)
     {
         if (a > b)
         {

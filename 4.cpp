@@ -19,7 +19,7 @@ int main(){
     cout << "Enter the fifth value: ";
     cin >> e;
 
-    if (a != b && b != c && c != d && d != e)
+    if (a != b && a != c && a != d && a != e && b != c && b != d && b != e && c != d && c != e && d != e)
     {
         if (a > b)
         {

@@ -10,11 +10,18 @@ int main(){
     cout << "Enter the second value: ";
     cin >> b;
 
-    if (a > b)
+    if (a != b)
     {
-        cout << "First value is Max...";
+        if (a > b)
+        {
+            cout << "First value is Max...";
+        }
+        else{
+            cout << "Second value is Max...";
+        }
     }
-    else{
-        cout << "Second value is Max...";
+    else
+    {
+        cout << "this value are same";
     }
 }

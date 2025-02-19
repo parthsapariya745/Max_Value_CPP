@@ -1,8 +1,9 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    int a,b,c;
+int main()
+{
+    int a, b, c;
 
     cout << "Enter the first value: ";
     cin >> a;
@@ -12,24 +13,34 @@ int main(){
 
     cout << "Enter the third value: ";
     cin >> c;
-    
-    if (a > b)
+
+    if (a != b && a != c && b != c)
     {
-        if (a > c)
+        if (a > b)
         {
-            cout << "First value is Max...";
+            if (a > c)
+            {
+                cout << "First value is Max...";
+            }
+            else
+            {
+                cout << "third value is Max...";
+            }
         }
-        else{
-            cout << "third value is Max...";
+        else
+        {
+            if (b > c)
+            {
+                cout << "second value is Max...";
+            }
+            else
+            {
+                cout << "third value is Max...";
+            }
         }
     }
-    else{
-        if (b > c)
-        {
-            cout << "second value is Max...";
-        }
-        else{
-            cout << "third value is Max...";
-        }
+    else
+    {
+        cout << "this value are same";
     }
 }
